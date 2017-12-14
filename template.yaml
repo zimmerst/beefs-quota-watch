@@ -1,0 +1,15 @@
+server_to_copy_passwd : "ip address of server you want to use for passwd file"
+ssh_key : "ssh key"
+ssh_user : "ssh user for server copy"
+beegfs_storage_root : "/location/of/root/mount/point"
+groups:
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"}
+
+warning_template: "/path/to/templates/warning.txt"
+blocked_template: "/path/to/templates/blocked.txt"
+admin_email : "email address of administrator"
+retention_period : "retention period in days, if status = enforcing, will remove files belonging to group which are older than XXX days"
+threshold : "if x% of pledge are reached, trigger status change from free to enforcing"
+# status override will override enforcement status -- if set, no pledges will apply. Use this sparingly, e.g. for temporary loans.
