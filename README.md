@@ -1,4 +1,4 @@
-# beefs-quota-watch
+# beegfs-quota-watch
 Quota Watch utility for BeeGFS http://beegfs.io/
 
 all-in-one package for (soft) quota enforcement. 
