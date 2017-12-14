@@ -3,10 +3,10 @@ ssh_key : "ssh key"
 ssh_user : "ssh user for server copy"
 beegfs_storage_root : "/location/of/root/mount/point"
 groups:
- { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
- { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
- { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"}
-
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", last_update: "datetime object", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", last_update: "datetime object", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"},
+ { name: "group name", id: "numerical group id", pledge: "amount of storage pledged (TB)", last_update: "datetime object", status : "one in [free, enforcing, blocked, override]", czar: "email address of group czar"}
+grace_period: "timedelta in days"
 warning_template: "/path/to/templates/warning.txt"
 blocked_template: "/path/to/templates/blocked.txt"
 admin_email : "email address of administrator"
